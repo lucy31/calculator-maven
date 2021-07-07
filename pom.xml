@@ -10,8 +10,14 @@
   <packaging>jar</packaging>
 
   <name>calculator-ops</name>
-  <!-- FIXME change it to the project's website -->
+  <description>Basic calculator application as POC for Maven deploy</description>
   <url>https://github.com/lucy31/calculator-maven</url>
+
+  <scm>
+    <connection>csm:git:git:https://github.com/lucy31/calculator-maven.git</connection>
+    <developerConnection>https://github.com/lucy31/calculator-maven.git</developerConnection>
+    <url>https://github.com/lucy31/calculator-maven</url>
+  </scm>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -19,16 +25,12 @@
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
-  <distributionManagement>
-    <snapshotRepository>
-      <id>ossrh</id>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-    </snapshotRepository>
-    <repository>
-      <id>ossrh</id>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-    </repository>
-  </distributionManagement>    
+<distributionManagement>
+  <snapshotRepository>
+    <id>ossrh</id>
+    <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+  </snapshotRepository>
+</distributionManagement>  
 
   <dependencies>
     <dependency>
@@ -95,17 +97,17 @@
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
         </plugin>
-	<plugin>
-    	  <groupId>org.sonatype.plugins</groupId>
-          <artifactId>nexus-staging-maven-plugin</artifactId>
-          <version>1.6.8</version>
-          <extensions>true</extensions>
-    	  <configuration>
-          <serverId>ossrh</serverId>
-          <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-          <autoReleaseAfterClose>true</autoReleaseAfterClose>
-          </configuration>
-	</plugin>   
+	 <plugin>
+      <groupId>org.sonatype.plugins</groupId>
+      <artifactId>nexus-staging-maven-plugin</artifactId>
+      <version>1.6.7</version>
+      <extensions>true</extensions>
+      <configuration>
+        <serverId>ossrh</serverId>
+        <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
+        <autoReleaseAfterClose>true</autoReleaseAfterClose>
+      </configuration>
+    </plugin>
 	<plugin>
     	  <groupId>org.apache.maven.plugins</groupId>
     	  <artifactId>maven-source-plugin</artifactId>
