@@ -54,4 +54,9 @@ class CalculatorTest{
 		assertAll(()->assertEquals(-6, cal.negate(6)),
 			()->assertEquals(5, cal.negate(-5)));
 	}
+
+	@Test
+	void factorial(){
+		assertEquals(120, cal.factorial(5));
+	}
 }
