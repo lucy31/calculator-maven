@@ -48,4 +48,8 @@ class Calculator{
 	public double square(int a){
 		return Math.pow(a,2);
 	}
+
+	public double cube(int a){
+		return Math.pow(a,3);
+	}
 }

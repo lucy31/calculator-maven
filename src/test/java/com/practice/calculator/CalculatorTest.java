@@ -64,4 +64,9 @@ class CalculatorTest{
 	void square(){
 		assertEquals(16, cal.square(4));
 	}
+
+	@Test
+	void cube(){
+		assertEquals(8, cal.cube(2));
+	}
 }
