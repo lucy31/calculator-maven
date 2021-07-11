@@ -48,4 +48,10 @@ class CalculatorTest{
 	void power(){
 		assertEquals(9D, cal.power(3,2));
 	}
+
+	@Test
+	void negate(){
+		assertAll(()->assertEquals(-6, cal.negate(6)),
+			()->assertEquals(5, cal.negate(-5)));
+	}
 }

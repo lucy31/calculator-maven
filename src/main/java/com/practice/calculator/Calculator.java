@@ -32,4 +32,8 @@ class Calculator{
 	public double power(int a, int b){
 		return Math.pow(a,b);
 	}
+
+	public int negate(int a){
+		return a*(-1);
+	}
 }
