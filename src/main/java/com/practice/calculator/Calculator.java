@@ -49,6 +49,7 @@ class Calculator{
 		return Math.pow(a,2);
 	}
 
+	//Testing if this triggers a build
 	public double cube(int a){
 		return Math.pow(a,3);
 	}
