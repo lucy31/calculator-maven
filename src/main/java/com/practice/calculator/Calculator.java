@@ -1,5 +1,7 @@
 package com.practice.calculator;
 
+import java.lang.Math;
+
 class Calculator{
 	
 	public int add(int a, int b){
@@ -25,5 +27,9 @@ class Calculator{
 	
 	public int mod(int a, int b){
 		return a%b;
+	}
+
+	public double power(int a, int b){
+		return Math.pow(a,b);
 	}
 }

@@ -2,6 +2,7 @@ package com.practice.calculator;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.lang.Math;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
@@ -41,5 +42,10 @@ class CalculatorTest{
 	@Test
 	void mod(){
 		assertEquals(2, cal.mod(10,4));
+	}
+
+	@Test
+	void power(){
+		assertEquals(9D, cal.power(3,2));
 	}
 }
