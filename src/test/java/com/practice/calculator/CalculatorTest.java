@@ -59,4 +59,9 @@ class CalculatorTest{
 	void factorial(){
 		assertEquals(120, cal.factorial(5));
 	}
+
+	@Test
+	void square(){
+		assertEquals(16, cal.square(4));
+	}
 }

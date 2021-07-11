@@ -44,4 +44,8 @@ class Calculator{
 		}
 		return res;
 	}
+
+	public double square(int a){
+		return Math.pow(a,2);
+	}
 }
